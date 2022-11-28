@@ -39,12 +39,14 @@
     height: 43px;
     padding-left: 10px;
     border: 1px solid black;
+    background-color: white;
     outline: none;
     font-family: "Poppins";
     border-radius: 4px;
 }
 .telephone_num input{
     width: 100%;
+    background-color: white;
     height: 43px;
     padding-left: 10px;
     border: 1px solid black;
