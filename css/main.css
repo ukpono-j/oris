@@ -5,11 +5,11 @@
   padding: 0px;
   box-sizing: border-box;
 }
-nav{
+/* nav{
     height: 0px;
     width: 100%;
     border: 1px solid black;
-}
+} */
 .mm{
     display: flex;
     min-height: 100vh;
