@@ -8,14 +8,12 @@
 nav{
     height: auto;
     width: 100%;
-    /* border: 1px solid black; */
     display: flex;
     justify-content: end;
     padding: 10px 10px 10px 10px;
 }
 .nav_bx1{
  width: auto;
- /* border: 1px solid  red; */
  height: auto;
  display: flex;
  align-items: center;
@@ -42,15 +40,12 @@ nav{
 .main-form {
   height: auto;
   width: 600px;
-  /* border: 1px solid black; */
 }
 .name_bx{
-    /* border: 1px solid #000; */
     width: 100%;
     height: auto;
 }
 .telephone_num{
-    /* border: 1px solid #000; */
     width: 100%;
     margin-top: 20px;
     height: auto;
@@ -82,16 +77,13 @@ nav{
     font-family: "Poppins";
     outline: none;
     border-radius: 4px;
-    /* background-color: white; */
     height: 43px;
     border: 1px solid  black;
 }
 .radio-area > div{
-    /* border: 1px solid  red; */
     margin-top: 30px;
     display: flex;
     align-items: center;
-    /* height: 43px; */
 }
 .radio-area{
     display: flex;
@@ -106,7 +98,6 @@ nav{
     border: 1px solid  black;
 }
 .default_submit{
-    /* border: 1px solid  black; */
     height: auto;
     width: 100%;
     margin-top: 30px;
