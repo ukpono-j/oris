@@ -1,42 +1,37 @@
-// fetch("https://new-oris-default-rtdb.firebaseio.com")
-// .then((resp)=>console.log(resp))
-// .catch(err=>console.log(err))
+function shortString() {
+	var shorts = document.querySelectorAll('.short');
+	if (shorts) {
+		Array.prototype.forEach.call(shorts, function(ele) {
+			var str = ele.innerText,
+				indt = '...';
 
-
-const userName = document.querySelector("#name");
-const telephone = document.querySelector("#telephoneid");
-const cars = document.querySelector("#carsid");
-const interestTwo = document.querySelector("#interestTwoId");
-const submitButton = document.querySelector("#submit");
-
-const receiver_name = document.querySelector(".receiver_name")
-const receiver_telephone = document.querySelector(".receiver_telephone")
-const receiver_cars = document.querySelector(".receiver_cars")
-const receiver_interest = document.querySelector(".receiver_interest")
-
-
-
-const data = {
-    userName,
-    telephone,
-    cars,
-    interestTwo,
+			if (ele.hasAttribute('data-limit')) {
+				if (str.length > ele.dataset.limit) {
+					var result = `${str.substring(0, ele.dataset.limit - indt.length).trim()}${indt}`;
+					ele.innerText = result;
+					str = null;
+					result = null;
+				}
+			} else {
+				throw Error('Cannot find attribute \'data-limit\'');
+			}
+		});
+	}
 }
 
+$(function() {
+	shortString();
+	
+	$('#my_form').change(function(){
+		var str = "<em>First name:</em><strong> " + $( "#name" ).val() + "</strong><br><em>Last name:</em><strong> " + $( "#surname" ).val() + "</strong><br><em>My car:</em><strong> " + $( "select#cars option:selected" ).text() + "</strong><br><em>My country:</em><strong> " + $( "select#countries option:selected" ).text() + "</strong>";
 
+		$('#check_before_submit').html( str );
+	});
 
-submitButton.addEventListener("click", ()=>{
+	$( "#my_form" ).on( "submit", function( event ) {
+		event.preventDefault();
+		var str = "<em>First name:</em><strong> " + $( "#name" ).val() + "</strong><br><em>Last name:</em><strong> " + $( "#surname" ).val() + "</strong><br><em>My car:</em><strong> " + $( "select#cars option:selected" ).text() + "</strong><br><em>My country:</em><strong> " + $( "select#countries option:selected" ).text() + "</strong><br><em>Form's query-string:</em><strong> " + $( this ).serialize() + "</strong>"; // the query-string will use the "name" attribute as key and the "value" attribute as value
 
-localStorage.setItem("userName", userName.value);
-localStorage.setItem("telephone", telephone.value);
-localStorage.setItem("cars",cars.value);
-localStorage.setItem("interestTwo", interestTwo.value);
-
-
-
-
-
-})
-
-
-
+		$('#check_before_submit').html( str );
+	});
+});
