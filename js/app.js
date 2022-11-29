@@ -23,7 +23,7 @@ $(function() {
 	shortString();
 	
 	$('#my_form').change(function(){
-		var str = "<em>First name:</em><strong> " + $( "#name" ).val() + "</strong><br><em>Last name:</em><strong> " + $( "#surname" ).val() + "</strong><br><em>My car:</em><strong> " + $( "select#cars option:selected" ).text() + "</strong><br><em>Done</em><strong> " + $( "select#countries option:selected" ).text() + "</strong>";
+		var str = "<em>First name:</em><br><strong> " + $( "#name" ).val() + "</strong><br><em>Last name:</em><br><strong> " + $( "#surname" ).val() + "</strong><br><em>My car:</em><br><strong> " + $( "select#cars option:selected" ).text() + "</strong><br><em>Done</em><strong> " + $( "select#countries option:selected" ).text() + "</strong>";
 
 		$('#check_before_submit').html( str );
 	});
