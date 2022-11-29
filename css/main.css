@@ -127,6 +127,9 @@ nav{
     display: none;
     font-weight: 900;
 }
+
+
+
 @media screen and (max-width: 554px){
     .radio-area{
         display: block;
@@ -148,4 +151,68 @@ nav{
         display: flex;
         min-height: 90vh;
     }
+    .reciever .reciever-bx1{
+        font-size: 14px;
+     }
+}
+
+
+
+/* ================ Reciever Page -==========  */
+
+.reiever-page{
+ height: 100vh;
+ width: 100%;
+  /* border: 1px solid black; */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reciever{
+    height: auto;
+    /* border: 1px solid black; */
+    width: 600px;
+}
+.reciever .reciever-bx1{
+   display: flex;
+   margin-top: 13px;
+   flex-direction: column;
+   font-family: "Poppins";
+   font-weight: 500;
+   font-size: 16px;
+}
+.reciever-bx1 p{
+    padding-bottom: 3px;
+}
+.reciever-bx1 > div{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: auto;
+}
+.reciever-bx1 input{
+    width: 100%;
+    outline: none;
+    height: 40px;
+    border-radius: 9px;
+    border: 1px solid black;
+}
+.back{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.back a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins";
+    margin-top: 26px;
+     width: 160px;
+     height: 40px;
+     background-color: #001440;
 }
