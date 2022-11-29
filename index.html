@@ -14,35 +14,36 @@
     <nav>
          <div class="nav_bx1">
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">Reciever</a></li>
+            <li><a href="./asp/reciever.asp">Reciever</a></li>
          </div>
     </nav>
     <!-- =========== main form =========== -->
 <div class="mm">
-    <form class="main-form">
+    <form class="main-form" id="userDetails">
+        <div class="alert">Your message has been sent</div>
         <!-- Name -->
         <div class="name_bx">
-            <input type="text" placeholder="Name" name="username">
+            <input type="text" placeholder="Name" name="username" id="name">
         </div>
         <!-- Telephone -->
         <div class="telephone_num">
-            <input type="text" placeholder="Telephone Number" name="username">
+            <input type="text" placeholder="Telephone Number" name="username" id="telephoneid">
         </div>
         <!-- = Dropdown = -->
         <div class="dropbx">
-            <select name="" id="">
+            <select name="selectCars" id="carsid">
                 <option value="" class="options">Select Cars</option>
                 <option value="" class="options">Fords 15000$</option>
                 <option value="" class="options">Mercedes 40000$ </option>
                 <option value="" class="options">Toyota 17000$</option>
             </select>
             <div class="radio-area">
-                <div class="">
-                    <input type="radio" name="interest_radio" id="" class="radio">
+                <div class="" >
+                    <input type="radio" name="interest_radio" id="interestTwoid" class="radio" value="6 months with 2% interest rate">
                     <div>6 months with 2% interest rate</div>
                 </div>
                 <div>
-                    <input type="radio" name="interest_radio" id="" class="radio">
+                    <input type="radio" name="interest_radio" id="interestFourid" class="radio" value="12 months 4% interest rate">
                     <div>12 months 4% interest rate</div>
                 </div>
             </div>
@@ -54,9 +55,10 @@
 </div>
     </div>
 
-
-
-    <script src="js/app.js"></script>
+    <script src="js/firebaseCdn.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/9.14.0/firebase-app.js" integrity="sha512-ewOP2Avv5hrFQDlXexYadiPL71H0SF5jWcGNJcDXEGhsIjDe9e5y6kjZBikuK3YIWkV8WBO9tr1JwtDG07tpkg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <!-- <script src="js/app.js"></script> -->
+    <script src="js/configuration.js"></script>
    
 </body>
 

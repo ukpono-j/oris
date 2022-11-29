@@ -8,6 +8,11 @@ formEl.addEventListener("submit", event => {
     event.preventDefault()
 
     const formData = new FormData(formEl);
-       console.log(formData.get('username'))
-    // fetch()
+    const data = new URLSearchParams(formData)
+    //    console.log(formData.get('username'))
+    fetch('https://regress.in/api/users', {
+        method: "POST",
+        body: data
+    }).then(res => res.json())
+       
 })
