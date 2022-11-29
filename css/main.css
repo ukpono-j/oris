@@ -28,8 +28,8 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px 18px;
-    height: 80vh;
+    padding: 20px 18px;
+    height: 76vh;
 }
 .tab-pane{
     /* border: 1px solid  black; */
