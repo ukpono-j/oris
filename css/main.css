@@ -14,7 +14,7 @@ nav{
     width: 100%;
     display: flex;
     justify-content: end;
-    padding: 20px 10px 10px 10px;
+    padding: 14px 10px 10px 10px;
 }
 .nav_bx1{
  width: auto;
@@ -28,15 +28,15 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 18px;
-    height: 70vh;
+    padding: 30px 18px;
+    height: 80vh;
 }
 .tab-pane{
     /* border: 1px solid  black; */
     width: 600px;
 }
 label{
-    margin-top: 10px;
+    margin-top: 17px;
     font-family: "Poppins";
     font-size: 15px;
 }
@@ -46,6 +46,8 @@ label{
     font-family: "Poppins";
     font-size: 15px;
     padding-left: 10px;
+    border: 1px solid black;
+    border-radius: 7px;
     height: 43px;
 }
 .tab-pane form select{
@@ -53,6 +55,8 @@ label{
     width: 100%;
     margin-top: 10px;
     padding-left: 10px;
+    border: 1px solid black;
+    border-radius: 7px;
     font-family: "Poppins";
     /* margin-top: 10px; */
 }
@@ -67,6 +71,7 @@ label{
     border: 1px solid black;
     color: white;
     width: 100%;
+    border-radius: 9px;
     height: 43px;
 }
 
@@ -77,6 +82,7 @@ label{
     height: auto;
     /* border: 1px solid  red; */
     padding-bottom: 17px;
+    font-family: "Poppins";
     width: 100%;
     display: flex;
     align-items: center;
@@ -101,7 +107,13 @@ label{
     .radio_container{
         padding-top: 10px;
     }
+    .submit{
+        font-size: 14px;
+    }
     label{
+        font-size: 14px !important;
+    }
+    .radio{
         font-size: 14px;
     }
     .ls {
