@@ -48,10 +48,10 @@
                 <label for="surname">Telephone Number </label>
                 <br>
                 <input type="text" id="surname" name="Lastname" value="" placeholder="Telephone Number">
-                <br>
                 <div class="mdl-selectfield">
                     <span>
-                        Select car:  <br><select id="cars" name="Cars">
+                        <label for="">Select car:</label>
+                        <br><select id="cars" name="Cars">
                             <option class='short' data-limit='8' value="Volvo">Fords 15000$</option>
                             <option class='short' data-limit='8' value="Saab">Mercedes 4000$</option>
                             <option class='short' data-limit='8' value="Fiat">Toyota</option>
@@ -59,8 +59,26 @@
                         </select>
                     </span>
                 </div>
-    
-                <button value="Submit"  class="submit">Submit</button>
+                <div class="radio">
+                    <div class="radio_container">
+                        <div>
+                            <input type="radio" placeholder="" class="radio-1">
+                        </div>
+                        <div class="ls">
+                            6 months with 2% interest rate
+                        </div>
+                    </div>
+                    <div class="radio_container">
+                        <div>
+                            <input type="radio" placeholder="" class="radio-1">
+                        </div>
+                        <div class="ls">
+                            12 months 4% interest rate
+                        </div>
+                    </div>
+                </div>
+
+                <button value="Submit" class="submit">Submit</button>
             </form>
 
         </div>

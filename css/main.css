@@ -51,12 +51,13 @@ label{
 .tab-pane form select{
     height: 43px;
     width: 100%;
+    margin-top: 10px;
     padding-left: 10px;
     font-family: "Poppins";
     /* margin-top: 10px; */
 }
 .mdl-selectfield{
-    margin-top: 10px;
+    /* margin-top: 10px; */
     padding-bottom: 20px;
 }
 .submit{
@@ -69,3 +70,50 @@ label{
     height: 43px;
 }
 
+#check_before_submit{
+    font-family: "Poppins";
+}
+.radio{
+    height: auto;
+    /* border: 1px solid  red; */
+    padding-bottom: 17px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ls{
+   padding-left: 10px;
+}
+.radio-1{
+    width: 14px !important;
+    height: 14px !important;
+}
+.radio_container{
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 531px){
+    .radio{
+        display: block;
+    }
+    .radio_container{
+        padding-top: 10px;
+    }
+    label{
+        font-size: 14px;
+    }
+    .ls {
+        font-size: 14px;
+    }
+    .tab-pane form  input{
+      font-size: 14px;
+    }
+    .tab-pane form select{
+      font-size: 14px;
+    }
+    .nav-item{
+        font-size: 13px;
+    }
+}

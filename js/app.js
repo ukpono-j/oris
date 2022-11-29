@@ -23,14 +23,14 @@ $(function() {
 	shortString();
 	
 	$('#my_form').change(function(){
-		var str = "<em>First name:</em><strong> " + $( "#name" ).val() + "</strong><br><em>Last name:</em><strong> " + $( "#surname" ).val() + "</strong><br><em>My car:</em><strong> " + $( "select#cars option:selected" ).text() + "</strong><br><em>My country:</em><strong> " + $( "select#countries option:selected" ).text() + "</strong>";
+		var str = "<em>First name:</em><strong> " + $( "#name" ).val() + "</strong><br><em>Last name:</em><strong> " + $( "#surname" ).val() + "</strong><br><em>My car:</em><strong> " + $( "select#cars option:selected" ).text() + "</strong><br><em>Done</em><strong> " + $( "select#countries option:selected" ).text() + "</strong>";
 
 		$('#check_before_submit').html( str );
 	});
 
 	$( "#my_form" ).on( "submit", function( event ) {
 		event.preventDefault();
-		var str = "<em>First name:</em><strong> " + $( "#name" ).val() + "</strong><br><em>Last name:</em><strong> " + $( "#surname" ).val() + "</strong><br><em>My car:</em><strong> " + $( "select#cars option:selected" ).text() + "</strong><br><em>My country:</em><strong> " + $( "select#countries option:selected" ).text() + "</strong><br><em>Form's query-string:</em><strong> " + $( this ).serialize() + "</strong>"; // the query-string will use the "name" attribute as key and the "value" attribute as value
+		// var str = "<em>First name:</em><strong> " + $( "#name" ).val() + "</strong><br><em>Last name:</em><strong> " + $( "#surname" ).val() + "</strong><br><em>My car:</em><strong> " + $( "select#cars option:selected" ).text() + "</strong><br><em>My country:</em><strong> " + $( "select#countries option:selected" ).text() + "</strong><br><em>Form's query-string:</em><strong> " + $( this ).serialize() + "</strong>"; // the query-string will use the "name" attribute as key and the "value" attribute as value
 
 		$('#check_before_submit').html( str );
 	});
